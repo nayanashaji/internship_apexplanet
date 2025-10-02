@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=visibility" />
+</head>
+<body>
+    <form id="form" class="form">
+        <div>
+            <label>First Name:
+            <input type="text" id="firstname" placeholder="First Name" data-key="firstname" class="input">
+            </label>
+            <span class="empty">Please fill this field</span>
+            <span data-error="firstname-error" class="error">Please enter a valid name</span>
+        </div>
+        <div>
+            <label>Last Name:
+            <input type="text" id="lastname" placeholder="Last Name" data-key="lastname" class="input">
+            </label>
+            <span class="empty">Please fill this field</span>
+            <span data-error="lastname-error" class="error">Please enter a valid name</span>
+        </div>
+        <div>
+            <label>Email:
+            <input type="email" id="email" placeholder="Email" data-key="email" class="input">
+            </label>
+            <span class="empty">Please fill this field</span>
+            <span data-error="email-error" class="error">Please enter a valid email</span>
+        </div>
+        <div>
+            <label>Password:
+                <div class="container">
+                    <input type="password" id="password" placeholder="Password" data-key="password" class="input"/>
+                    <button class="button"><span class="material-symbols-outlined">visibility</span></button>
+                </div>
+            </label>
+            <span class="empty">Please fill this field</span>
+            <ul data-error="password-error" class="error">
+                <li>Password should have at least 8 characters</li>
+                <li>Password should have at least one lowercase letter</li>
+                <li>Password should have at least one uppercase letter</li>
+                <li>Password should have at least one number</li>
+                <li>Password should have at least one special character</li>
+            </ul>
+        </div>
+        <button type="button" id="createbutton" class="create">Create Account</button>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 3 – Carousel & API Fetch</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <h1>Task 3</h1>
+
+  <!-- 🎠 Carousel -->
+  <div class="carousel-container">
+    <div class="carousel active">
+      <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="Image 1" />
+    </div>
+    <div class="carousel">
+      <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014__340.jpg" alt="Image 2" />
+    </div>
+    <div class="carousel">
+      <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="Image 3" />
+    </div>
+
+    <button class="btn btn-prev"><span class="material-icons-outlined">chevron_left</span></button>
+    <button class="btn btn-next"><span class="material-icons-outlined">navigate_next</span></button>
+  </div>
+
+  <!-- 🌐 API Fetch Section -->
+  <div class="api-section">
+    <h2>Need a Laugh? 😂</h2>
+    <button id="jokeBtn">Get Random Joke</button>
+    <p id="jokeDisplay"></p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
